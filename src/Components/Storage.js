@@ -12,14 +12,13 @@ const Storage = (props) => {
   
   const [network, setNetwork] = useState("ethereum");
   const [target, setTarget] = useState("");
-  const [infura, setInfura] = useState("85b362ba337e4c348faedff589c9026a");
 
   const read = async () => {
     setResult(empty);
     setProcessing(true);
 
     try {
-      const json = await jsonLoad(network, target, infura);
+      const json = await jsonLoad(network, target);
       setStorage(json.data);
       setResult({ color: "green", msg: "done" });
     } catch (error) {
