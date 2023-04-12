@@ -6,6 +6,22 @@ export const constants = {
       display: "mainnet",
       network: "mainnet",
     },
+    arbitrum: {
+      display: "arbitrum one",
+      network: "arbitrum",
+    },
+    polygon: {
+      display: "polygon",
+      network: "polygon",
+    },
+    optimism: {
+      display: "optimism",
+      network: "optimism",
+    },
+    avalanche: {
+      display: "avalanche",
+      network: "avalanche",
+    },
     goerli: {
       display: "goerli",
       network: "goerli",
@@ -14,21 +30,17 @@ export const constants = {
       display: "sepolia",
       network: "sepolia",
     },
-    polygon: {
-      display: "polygon",
-      network: "polygon",
+    polygon_testnet: {
+      display: "polygon mumbai",
+      network: "polygon_testnet",
     },
-    polygon_goerli: {
-      display: "polygon goerli",
-      network: "polygon-goerli",
-    },
-    arbitrum: {
-      display: "arbitrum one",
-      network: "arb",
-    },
-    arbitrum_goerli: {
+    arbitrum_testnet: {
       display: "arbitrum goerli",
-      network: "arb-goerli",
+      network: "arbitrum_testnet",
+    },
+    avalanche_testnet: {
+      display: "avalanche fuji",
+      network: "avalanche_testnet",
     },
   }
 };

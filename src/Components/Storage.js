@@ -40,7 +40,7 @@ const Storage = (props) => {
 
         <div style={{ maxWidth: "530px" }}>
           <InputGroup>
-            <InputGroup.Text>network</InputGroup.Text>
+            <InputGroup.Text>&nbsp;network</InputGroup.Text>
             <Form.Select onChange={handleNetwork}>
               {Object.entries(constants.networks).map((network, index) => (
                 <option key={index} value={network[0]}>{network[1].display}</option>
@@ -49,7 +49,7 @@ const Storage = (props) => {
           </InputGroup>
           <br />
           <InputGroup>
-            <InputGroup.Text>&nbsp;target</InputGroup.Text>
+            <InputGroup.Text>contract</InputGroup.Text>
             <Form.Control placeholder="0x00..." aria-label="With textarea" onChange={handleTarget} />
           </InputGroup>
         </div>
